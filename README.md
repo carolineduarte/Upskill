@@ -2,4 +2,4 @@
 
 ## Exercícios de Aula
 
--  REST API
+- REST API
