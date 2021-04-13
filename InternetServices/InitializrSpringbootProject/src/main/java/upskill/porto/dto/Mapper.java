@@ -66,7 +66,7 @@ public class Mapper {
         return funcionarioDTO;
     }
     
-    public static Funcionario funcionarioDTO2Funcionario(FuncionarioDTO funcionarioDTO) throwsNullPointerException {
+    public static Funcionario funcionarioDTO2Funcionario(FuncionarioDTO funcionarioDTO) throws NullPointerException {
         Funcionario funcionario = null;
         Data data = dataDTO2data(funcionarioDTO.getNascimento());
         funcionario = new Funcionario(funcionarioDTO.getNif(), funcionarioDTO.getNome(), data, funcionarioDTO.getNumeroFuncionario(), funcionarioDTO.getCargo());

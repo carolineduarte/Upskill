@@ -13,7 +13,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
  */
 @JsonPropertyOrder({"numeroFuncionario", "cargo"})
 @JacksonXmlRootElement(localName = "funcionario")
-public class FuncionarioDTO extends ListaPessoaDTO{
+public class FuncionarioDTO extends PessoaDTO{
     @JacksonXmlProperty(localName = "numero")
     private int numeroFuncionario;
     @JacksonXmlProperty(localName = "cargo")

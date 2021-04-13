@@ -69,28 +69,29 @@ public class Data implements Serializable{
                 if(dia > 0 && dia <= 31) {
                     f = true;
                 }
-                break;
+            break;
             case 4:
             case 6:
             case 9:
             case 11:
                 if(dia > 0 && dia <= 30) {
                     f = true;
-                }break;
+                }
+            break;
             case 2:
                 if(eBissexto(ano) == true){
                     if(dia > 0 && dia <=29) {
                         f = true;
-                    }else{
-                        if(dia > 0 && dia <=28) {
-                            f = true;
-                        }
                     }
-                    break;
+                }else{
+                    if(dia > 0 && dia <=28) {
+                        f = true;
+                    }
                 }
-            default: break;
-        }    
-        return f;
-    }
+            break;                                
+            default: break;    
+            }
+             return f;   
+    }     
 }
 

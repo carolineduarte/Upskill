@@ -16,17 +16,16 @@ import java.util.ArrayList;
 public class ListaPessoaDTO {
    @JacksonXmlElementWrapper(useWrapping = false)
    @JacksonXmlProperty(localName = "pessoa")
-   
-   private ArrayList<ListaPessoaDTO> pessoas;
+   private ArrayList<PessoaDTO> pessoas;
    
    public ListaPessoaDTO() {
    }
    
-   public ArrayList<ListaPessoaDTO> getPessoas() {
+   public ArrayList<PessoaDTO> getPessoas() {
        return pessoas;
    }
    
-   public void setPessoas(ArrayList<ListaPessoaDTO> pessoas) {
+   public void setPessoas(ArrayList<PessoaDTO> pessoas) {
        this.pessoas = pessoas;
    }
 }
